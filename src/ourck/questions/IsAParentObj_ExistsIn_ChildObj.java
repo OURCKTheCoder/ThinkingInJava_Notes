@@ -66,6 +66,7 @@ class SubClass extends SuperClass {
  * 				因此不管是在哪里写toString()，通过子类执行fun()和super.fun()结果都一样；
  * 解答问题1：
  * 解答问题2：应该是没有这样一个“父类子对象”的。（待验证）
+ * 			(验证完成：通过javap反编译，看到这个子类.class文件既没有父类子对象，也没有从父类拷贝来任何的private成员)
  * 			一种通用的说法是：
  * 			
  * 			“在生成子类对象时，
